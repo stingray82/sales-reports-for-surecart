@@ -1,0 +1,13 @@
+Sales Report for SureCart - CSV Sales Reports for Individual products or Price IDs using the SureCart API
+
+
+== Description ==
+Sales Report for SureCart - CSV Sales Reports for Individual products or Price IDs using the SureCart API
+
+== Installation ==
+
+1. Upload the `sales-report-for-surecart` folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Its now ready to use
+
+== Frequently Asked Questions ==
