@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       Sales Report for SureCart
  * Description:       CSV Sales Reports for Individual products or Price IDs using the SureCart API
- * Tested up to:      6.8.2
+ * Tested up to:      6.9.4
  * Requires at least: 6.5
  * Requires PHP:      8.1
- * Version:           1.0
+ * Version:           1.0.1
  * Author:            reallyusefulplugins.com
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL2
@@ -17,7 +17,7 @@
 if ( ! defined( 'ABSPATH' ) ) return;
 
 
-define('RUP_SR4SC_NOTIFIER_VERSION', '1.0');
+define('RUP_SR4SC_NOTIFIER_VERSION', '1.0.1');
 define('RUP_SR4SC_NOTIFIER_SLUG', 'sales-report-for-surecart'); // Replace with your unique slug if needed
 define('RUP_SR4SC_NOTIFIER_MAIN_FILE', __FILE__);
 define('RUP_SR4SC_NOTIFIER_DIR', plugin_dir_path(__FILE__));
@@ -522,15 +522,16 @@ function scx_get_prices_for_product( $product_id, $force_refresh = false ) {
 
 
 // ──────────────────────────────────────────────────────────────────────────
-//  Updater bootstrap (plugins_loaded priority 1):
+//  Updater bootstrap (plugins_loaded priority 20):
 // ──────────────────────────────────────────────────────────────────────────
 add_action( 'plugins_loaded', function() {
     // 1) Load our universal drop-in. Because that file begins with "namespace UUPD\V1;",
-    //    both the class and the helper live under UUPD\V1.
+    //    both the class and the helper live under UUPD\V2.
     require_once __DIR__ . '/inc/updater.php';
 
     // 2) Build a single $updater_config array:
     $updater_config = [
+    	'vendor'      => 'RUP',
         'plugin_file' => plugin_basename(__FILE__),             // e.g. "simply-static-export-notify/simply-static-export-notify.php"
         'slug'        => RUP_SR4SC_NOTIFIER_SLUG,           // must match your updater‐server slug
         'name'        => 'Sales Report for SureCart',         // human‐readable plugin name
@@ -539,8 +540,8 @@ add_action( 'plugins_loaded', function() {
         'server'      => 'https://raw.githubusercontent.com/stingray82/sales-reports-for-surecart/main/uupd/index.json',
     ];
 
-    // 3) Call the helper in the UUPD\V1 namespace:
-    \RUP\Updater\Updater_V1::register( $updater_config );
+    // 3) Call the helper in the UUPD\V2 namespace:
+    \RUP\Updater\Updater_V2::register( $updater_config );
 }, 20 );
 
 // MainWP Icon Filter

@@ -1,19 +1,19 @@
 {
     "slug": "sales-reports-for-surecart",
     "name": "Sales Report for SureCart",
-    "version": "1.0",
+    "version": "1.0.1",
     "author": "reallyusefulplugins.com",
     "author_homepage": "https://reallyusefulplugins.com",
     "requires_php": "8.1",
     "requires": "6.5",
-    "tested": "6.8.2",
+    "tested": "6.9.4",
     "sections": {
         "description": "Sales Report for SureCart - CSV Sales Reports for Individual products or Price IDs using the SureCart API",
-        "installation": "1. Upload the `sales-report-for-surecart` folder to the `/wp-content/plugins/` directory.<br />\r\n2. Activate the plugin through the 'Plugins' menu in WordPress.<br />\r\n3. Its now ready to use",
+        "installation": "1. Upload the `sales-report-for-surecart` folder to the `/wp-content/plugins/` directory.<br />\n2. Activate the plugin through the 'Plugins' menu in WordPress.<br />\n3. Its now ready to use",
         "frequently_asked_questions": "",
-        "changelog": "<h4>1.0.0 04 September 2025</h4><ul><li>New: Initial Release</li></ul>"
+        "changelog": "<h4>1.0.1 23 March 2026</h4><ul><li>Update: Updater to 2.0-Alpha</li><li>Update: Compatibility</li></ul><h4>1.0.0 04 September 2025</h4><ul><li>New: Initial Release</li></ul>"
     },
-    "last_updated": "2025-09-04 18:25:52",
+    "last_updated": "2026-03-23 15:33:34",
     "download_url": "https://github.com/stingray82/sales-reports-for-surecart/releases/latest/download/sales-report-for-surecart.zip",
     "banners": {
         "low": "https://raw.githubusercontent.com/stingray82/sales-reports-for-surecart/main/uupd/banner-772x250.png",
