@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       Sales Report for SureCart
  * Description:       CSV Sales Reports for Individual products or Price IDs using the SureCart API
- * Tested up to:      7.0.2
+ * Tested up to:      7.1.3
  * Requires at least: 6.5
  * Requires PHP:      8.1
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            reallyusefulplugins.com
  * Author URI:        https://reallyusefulplugins.com
  * License:           GPL2
@@ -17,7 +17,7 @@
 if ( ! defined( 'ABSPATH' ) ) return;
 
 
-define('RUP_SR4SC_NOTIFIER_VERSION', '1.0.2');
+define('RUP_SR4SC_NOTIFIER_VERSION', '1.0.3');
 define('RUP_SR4SC_NOTIFIER_SLUG', 'sales-report-for-surecart'); // Replace with your unique slug if needed
 define('RUP_SR4SC_NOTIFIER_MAIN_FILE', __FILE__);
 define('RUP_SR4SC_NOTIFIER_DIR', plugin_dir_path(__FILE__));

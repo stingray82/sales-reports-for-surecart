@@ -1,13 +1,9 @@
 === Sales Report for SureCart ===
-Contributors: reallyusefulplugins
-Donate link: https://reallyusefulplugins.com/donate
 Tags: SureCart,CSV,Export
 Requires at least: 6.5
-Tested up to: 7.0.2
-Stable tag: 1.0.2
+Tested up to: 7.1.3
+Stable tag: 1.0.3
 Requires PHP: 8.1
-License: GPL-2.0-or-later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Sales Report for SureCart - CSV Sales Reports for Individual products or Price IDs using the SureCart API
 
@@ -23,6 +19,10 @@ Sales Report for SureCart - CSV Sales Reports for Individual products or Price I
 
 == Frequently Asked Questions ==
 == Changelog ==
+= 1.0.3 16 October 2026 =
+Updated: UUPD Dependency Updated to Version 2.1 Stable
+Updated: Deploy Methodology
+
 = 1.0.2 24 July 2026 =
 Updated: UUPD Dependency Updated to Version 2.0 Stable
 
